@@ -19,8 +19,7 @@ public class Controller {
     }
     @GetMapping("/return")
     public List<Biletter> returnere(){
-        List<Biletter> biletter = rep.hentAlleBiletter();
-        return biletter;
+        return rep.hentAlleBiletter();
     }
     @GetMapping("/slett")
     public void slett(){
