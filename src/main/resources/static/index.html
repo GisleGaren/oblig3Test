@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bestilling av Kinobilett</h1>
+            <form class="form">
+                <div class="form-group">
+                    <label for="filmValg">
+                        Velg Film:
+                    </label>
+                    <select class = "form-control" id = "filmValg">
+                        <option value = "" disabled selected> Velg Film:</option>
+                        <option value = "Rocky"> Rocky </option>
+                        <option value = "The Sting"> The Sting </option>
+                        <option value = "Metropolis"> Metropolis </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="antall">
+                        Antall
+                    </label>
+                    <input size = "2 rem" id="antall">
+                    <label id="labelantall"></label>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">
+                        Fornavn
+                    </label>
+                    <input type="text" id="fornavn" >
+                    <label id="labelfor"></label>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">
+                        Etternavn
+                    </label>
+                    <input type="text" id="etternavn" >
+                    <label id="labelett"></label>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">
+                        Telefon
+                    </label>
+                    <input type="text" id="telefonnr" >
+                    <label id="labeltlf"></label>
+                </div>
+                <div class="form-group">
+                    <label for="epost">
+                        Epost
+                    </label>
+                    <input type="text" id="epost" >
+                    <label id="labelepost"></label>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="kjop()">Kjøp Billett</button>
+        </div>
+        <div class="col-md-8">
+            <h2>Alle billetter</h2>
+            <div id="resultat"></div>
+            <button class="btn btn-danger" onclick="slettArray()">Slett alle billetter</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
